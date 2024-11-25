@@ -11,9 +11,6 @@ yarn-error.log*
 # Node modules
 node_modules/
 
-# Build outputs
-dist/
-build/
 
 # Cache files
 *.cache
