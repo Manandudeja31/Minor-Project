@@ -57,7 +57,7 @@ const CreateTodo = () => {
 
   const handleEdit = (todo) => {
     setSearch(true);
-    setView(false);
+    setView(!view);
     setEditTask(todo); // Set the task that is being edited
     setState(todo.task); // Set task name
     setDesc(todo.description); // Set task description
