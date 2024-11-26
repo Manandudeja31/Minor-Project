@@ -55,7 +55,7 @@ const NewTask = ({
 
     if (phone) {
       axios
-        .post("http://localhost:4000/api/v1/schedule-sms", {
+        .post(`${window.location.origin}/api/v1/schedule-sms`, {
           task: state,
           phone: phone,
           time: time,
