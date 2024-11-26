@@ -18,7 +18,7 @@ const NewTask = ({
 }) => {
   const fetchTodos = () => {
     axios
-      .get(`${window.location.origin}/api/v1/gettodos`)
+      .get("https://minor-project-six-theta.vercel.app/api/v1/gettodos")
       .then((res) => {
         setTodos(res.data.tasks);
       })
@@ -34,7 +34,7 @@ const NewTask = ({
     }
 
     axios
-      .post(`${window.location.origin}/api/v1/createtodo`, {
+      .post("https://minor-project-six-theta.vercel.app/api/v1/createtodo", {
         task: state,
         description: desc,
         time: time,
