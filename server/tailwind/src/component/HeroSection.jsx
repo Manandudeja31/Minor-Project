@@ -4,11 +4,11 @@ import { IoMdAdd } from "react-icons/io";
 import { RiListView } from "react-icons/ri";
 const HeroSection = ({ view, setView, search, setSearch }) => {
   const handleSearch = () => {
-    setSearch(!search);
+    setSearch(true);
     setView(false);
   };
   const handleView = () => {
-    setView(!view);
+    setView(true);
     setSearch(false);
   };
   return (
