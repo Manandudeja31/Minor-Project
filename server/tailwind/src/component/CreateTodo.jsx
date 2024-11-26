@@ -57,6 +57,7 @@ const CreateTodo = () => {
 
   const handleEdit = (todo) => {
     setSearch(true);
+    setView(false);
     setEditTask(todo); // Set the task that is being edited
     setState(todo.task); // Set task name
     setDesc(todo.description); // Set task description
@@ -146,7 +147,7 @@ const CreateTodo = () => {
                           <div className="flex-col">
                             <div className="flex gap-10 ">
                               <h2 className="text-lg font-semibold ">
-                                <span className=" line-through ">
+                                <span className=" line-through text-wrap w-28 md:w-80">
                                   {todo.task}
                                 </span>
                               </h2>
@@ -163,7 +164,7 @@ const CreateTodo = () => {
                           </div>
                           <div className="flex-col">
                             <div className="flex gap-10">
-                              <h2 className="text-lg font-semibold">
+                              <h2 className="text-lg font-semibold text-wrap w-28 md:w-80">
                                 {todo.task}
                               </h2>
                             </div>
