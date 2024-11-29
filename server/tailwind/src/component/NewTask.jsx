@@ -61,12 +61,14 @@ const NewTask = ({
           time: time,
         })
         .then((res) => {
+          console.log("Message sent.");
           setState("");
           setDesc("");
           fetchTodos();
         })
         .catch((err) => {
           console.log(err);
+          console.log(`Error in sending message ${err.message}`);
         });
     }
   };
