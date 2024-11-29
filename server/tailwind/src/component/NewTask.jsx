@@ -90,7 +90,7 @@ const NewTask = ({
         setDesc("");
         setTime("");
         setPhone("");
-        setEditTask(null); // Clear edit state after updating
+        setEditTask(null);
         fetchTodos();
       })
       .catch((err) => {

@@ -58,11 +58,11 @@ const CreateTodo = () => {
   const handleEdit = (todo) => {
     setSearch(true);
     setView(!view);
-    setEditTask(todo); // Set the task that is being edited
-    setState(todo.task); // Set task name
-    setDesc(todo.description); // Set task description
-    setTime(todo.time); // Set task time
-    setPhone(todo.phone); // Set phone number (if needed)
+    setEditTask(todo);
+    setState(todo.task);
+    setDesc(todo.description);
+    setTime(todo.time);
+    setPhone(todo.phone);
   };
 
   const handleComplete = (id) => {
